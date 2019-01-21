@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{2447EE20-8095-4F09-9DD7-885D6994BFF8}|Default">
+  <MonoDevelop.Ide.ItemProperties.BooksPriceCompare.Android FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BooksPriceCompare/MainPage.xaml">
+    <Files>
+      <File FileName="BooksPriceCompare/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="BooksPriceCompare/MainPage.xaml" Line="7" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BooksPriceCompare.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BooksPriceCompare FirstBuild="True" />
+</Properties>

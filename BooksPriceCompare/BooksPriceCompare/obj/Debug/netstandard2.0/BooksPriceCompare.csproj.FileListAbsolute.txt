@@ -1,0 +1,12 @@
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/bin/Debug/netstandard2.0/BooksPriceCompare.deps.json
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/bin/Debug/netstandard2.0/BooksPriceCompare.dll
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/bin/Debug/netstandard2.0/BooksPriceCompare.pdb
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/BooksPriceCompare.csprojAssemblyReference.cache
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/BooksPriceCompare.csproj.CoreCompileInputs.cache
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/BooksPriceCompare.AssemblyInfoInputs.cache
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/BooksPriceCompare.AssemblyInfo.cs
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/BooksPriceCompare.dll
+/Users/krisswoj/Documents/code/book-price-comparison-xamarin/BooksPriceCompare/BooksPriceCompare/obj/Debug/netstandard2.0/BooksPriceCompare.pdb
