@@ -8,37 +8,43 @@ using Newtonsoft.Json;
 
 namespace BooksPriceCompare
 {
-    public class Book
+    public class AllegroBooksResponse
     {
-        public string Name { get; set; }
-        public string Location { get; set; }
-        public string Details { get; set; }
-        public string Image { get; set; }
-        public int Population { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+        public string auctionName { get; set; }
+        public string auctionNumber { get; set; }
+        public string productPrice { get; set; }
+        public string lowestPriceDelivery { get; set; }
+        public string auctionImage { get; set; }
     }
+
 
     public class BooksViewModel
     {
-        public ObservableCollection<Book> Books { get; } = new ObservableCollection<Book>();
+        public ObservableCollection<AllegroBooksResponse> AllegroBooksResponses { get; } =
+            new ObservableCollection<AllegroBooksResponse>();
 
-        public async Task GetBooksAsAsync()
+        public async Task GetBooksAsAsync(String bookName)
         {
             try
             {
                 var client = new HttpClient();
-                var json = await client.GetStringAsync("https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json");
+                var json = await client.GetStringAsync(
+                    "http://book-finder-krisswoj.herokuapp.com/afp?code=" + bookTitleConverter(bookName));
 
-                var items = JsonConvert.DeserializeObject<List<Book>>(json);
+                var items = JsonConvert.DeserializeObject<List<AllegroBooksResponse>>(json);
 
                 foreach (var item in items)
-                    Books.Add(item);
+                    AllegroBooksResponses.Add(item);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
             }
+        }
+
+        private String bookTitleConverter(String bookName)
+        {
+            return bookName.Replace(" ", "+");
         }
     }
 }

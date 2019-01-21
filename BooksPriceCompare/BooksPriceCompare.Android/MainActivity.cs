@@ -18,7 +18,6 @@ namespace BooksPriceCompare.Droid
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-//            ToolbarResource = Resource.Layout.Toolbar;
             SetContentView(Resource.Layout.Toolbar);
             
             _viewModel = new BooksViewModel();
@@ -28,13 +27,14 @@ namespace BooksPriceCompare.Droid
             button.Click += async delegate
             {
                 button.Enabled = false;
+                var bookName = FindViewById<EditText>(Resource.Id.bookTitle).Text;
 
-                await _viewModel.GetBooksAsAsync();
+                await _viewModel.GetBooksAsAsync(bookName);
 
                 list.Adapter = new ArrayAdapter<string>(this,
                     Android.Resource.Layout.SimpleListItem1,
                     Android.Resource.Id.Text1,
-                    _viewModel.Books.Select(m => $"{m.Name} - from {m.Location}").ToArray());
+                    _viewModel.AllegroBooksResponses.Select(m => $"{m.auctionName} - from {m.auctionNumber} and with ").ToArray());
 
                 button.Enabled = true;
             };
