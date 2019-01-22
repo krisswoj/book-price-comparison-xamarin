@@ -20,13 +20,13 @@ namespace BooksPriceCompare
 
     public class BooksViewModel
     {
-        public ObservableCollection<AllegroBooksResponse> AllegroBooksResponses { get; } =
-            new ObservableCollection<AllegroBooksResponse>();
+        public ObservableCollection<AllegroBooksResponse> AllegroBooksResponses { get; set; }
 
         public async Task GetBooksAsAsync(String bookName)
         {
             try
             {
+                AllegroBooksResponses = new ObservableCollection<AllegroBooksResponse>();
                 var client = new HttpClient();
                 var json = await client.GetStringAsync(
                     "http://book-finder-krisswoj.herokuapp.com/afp?code=" + bookTitleConverter(bookName));

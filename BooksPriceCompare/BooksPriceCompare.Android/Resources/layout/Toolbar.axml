@@ -23,6 +23,7 @@
 
 	<ListView
 			android:id="@+id/listView1"
+			android:autoLink="web"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"/>
 
